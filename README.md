@@ -1,8 +1,8 @@
 # To-do-list_APP
-# awesome_books-es6
 
 
-> This is Awesome books App using ES6. HTML DOM manipulation is used for dynamically passing data to a single web page.
+
+> This is To-do-list App using ES6. HTML DOM manipulation is used for dynamically passing data to a single web page.
 
 ## Built With
 
@@ -10,7 +10,7 @@
 
 ## Live Demo
 
-[Click to view Project]( https://github.com/Kaweesi-Matia/To-do-list_APP/tree/addWebpack)
+[Click to view Project]( https://github.com/Kaweesi-Matia/To-do-list_APP/tree/add-remove)
 
 ## Getting Started
 
