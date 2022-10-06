@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/ce85233928.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <section class="container">
+      <div class="todo_Header">
+        <h2>Today's TO Do</h2>
+        <button type="button">
+          <i class="fa fa-refresh" aria-hidden="true"></i>
+        </button>
+      </div>
+      <form>
+        <div class="form_Header">
+          <input
+            type="text"
+            class="task_Input"
+            placeholder="Add to your list....."
+          />
+          <button type="submit" class="addItem">
+            <i class="fa fa-sign-in" aria-hidden="true"></i>
+          </button>
+        </div>
+      </form>
+      <section class="main">
+        <div class="list-content">
+
+        
+        </div>
+
+        <div class="clear_All">
+          <p>Clear All completed</p>
+        </div>
+      </section>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
