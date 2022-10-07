@@ -127,6 +127,7 @@ const clearCompleted = () => {
     todo.id = id + 1;
   });
   saveTodo();
+  window.location.reload();
 };
 
 export {
