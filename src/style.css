@@ -86,3 +86,8 @@ button {
   background-color: white;
   border: none;
 }
+
+.completed {
+  font-style: italic;
+  text-decoration: line-through;
+}
