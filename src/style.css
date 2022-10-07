@@ -25,7 +25,7 @@ h2 {
   font-family: "Courier New", Courier, monospace;
 }
 
-.todo_Item,
+.todo-Item,
 .form_Header {
   min-height: 45px;
   padding-left: 25px;
@@ -46,7 +46,7 @@ h2 {
   font-family: sans-serif;
 }
 
-.todo_Item {
+.todo-Item {
   display: flex;
   justify-content: space-between;
   align-items: center;
