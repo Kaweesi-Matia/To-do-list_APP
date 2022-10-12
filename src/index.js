@@ -1,9 +1,12 @@
+// import {
+//  clearCompleted,
+//  modifyToDoList,
+//  populate,
+// populateTasks,
+// } from './module/addRemoveEdit.js';
 import {
-  clearCompleted,
-  modifyToDoList,
-  populate,
-  populateTasks,
-} from './module/addRemoveEdit.js';
+  clearCompleted, populate, modifyToDoList, populateTasks,
+} from './module/interaction.js';
 import './style.css';
 
 const buttonClear = document.getElementById('clear_everything');
