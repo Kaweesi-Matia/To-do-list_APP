@@ -18,17 +18,17 @@
 
   <body>
     <section class="container">
-      <div class="todoHeader">
+      <div class="todo_Header">
         <h2>Today's TO Do</h2>
         <button type="button">
           <i class="fa fa-refresh" aria-hidden="true"></i>
         </button>
       </div>
-      <form>
-        <div class="formHeader">
+      <form class="form">
+        <div class="form_Header">
           <input
             type="text"
-            class="taskInput"
+            class="task_Input"
             placeholder="Add to your list....."
           />
           <button type="submit" class="addItem">
@@ -42,8 +42,11 @@
         
         </div>
 
-        <div class="clearAll">
-          <p>Clear All completed</p>
+        <div class="clear_All">
+          <!-- <p>Clear All completed</p> -->
+          <button type="button" id="clear_everything" class="clear_everything">
+            Clear all completed
+          </button>
         </div>
       </section>
     </section>

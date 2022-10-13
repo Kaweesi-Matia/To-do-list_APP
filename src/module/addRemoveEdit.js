@@ -1,31 +1,7 @@
-const form = document.querySelector('.form');
-const input = document.querySelector('.task_Input');
-const listContent = document.querySelector('.list-content');
-
 let todoz = [];
-let todo;
-
 const saveTodo = () => {
   const stringfyTodos = JSON.stringify(todoz);
   localStorage.setItem('todoz', stringfyTodos);
-};
-
-const getStoredTodos = () => {
-  todoz = JSON.parse(localStorage.getItem('todoz'));
-};
-
-const store = () => {
-  todo = {
-    Description: input.value,
-    id: todoz.length + 1,
-    completed: false,
-  };
-  todoz.push(todo);
-  saveTodo();
-};
-
-const clear = () => {
-  input.value = '';
 };
 
 const completedTodo = (stats, index) => {
@@ -72,64 +48,13 @@ const addTask = (todo) => {
   deleteIcon.classList.add('fa-trash');
   deleteIcon.classList.add('dots');
   ul.append(checkBox, newInp, deleteIcon);
+  const listContent = document.querySelector('.list-content');
   listContent.append(ul);
   deleteIcon.addEventListener('click', () => {
     deleteIcon.parentElement.remove();
     removeTask(todo.id);
   });
 };
+
 todoz.forEach(addTask);
-
-const modifyToDoList = () => {
-  const editInput = document.querySelectorAll('.newInput');
-  editInput.forEach((edits, indexy) => {
-    edits.addEventListener('change', () => {
-      todoz.forEach((todo, index) => {
-        if (indexy === index) {
-          todo.Description = edits.value;
-          localStorage.setItem('todoz', JSON.stringify(todoz));
-        }
-      });
-    });
-  });
-};
-modifyToDoList();
-
-function populate() {
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    if (input.value !== '') {
-      store();
-      addTask(todo);
-      clear();
-    }
-  });
-}
-
-const populateTasks = () => {
-  if (localStorage.getItem('todoz')) {
-    getStoredTodos();
-    todoz.map((task) => {
-      addTask(task);
-      return task;
-    });
-  } else {
-    todoz.map((task) => {
-      addTask(task);
-      return task;
-    });
-  }
-};
-
-const clearCompleted = () => {
-  todoz = todoz.filter((task) => task.completed !== true);
-  todoz.forEach((todo, id) => {
-    todo.id = id + 1;
-  });
-  saveTodo();
-  window.location.reload();
-};
-
-export {
-  populate, modifyToDoList, populateTasks, clearCompleted,
-};
+export { addTask, removeTask };
