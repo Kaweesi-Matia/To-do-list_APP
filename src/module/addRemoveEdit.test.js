@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/no-unresolved
-const MockItemsTest = require('./mockitemsClass.js');
+const MockItemsTest = require('./mockItemsClass.js');
 const mockItems = require('../__mock__/storage.js');
 
 describe('Test for Task Addition', () => {
