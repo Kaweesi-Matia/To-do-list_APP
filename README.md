@@ -10,7 +10,7 @@
 
 ## Live Demo
 
-[Click to view Project]( https://github.com/Kaweesi-Matia/To-do-list_APP/tree/add-remove)
+[Click to view Project]( https://github.com/Kaweesi-Matia/To-do-list_APP/tree/add-remove/dist)
 
 ## Getting Started
 
