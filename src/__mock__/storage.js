@@ -14,6 +14,7 @@ const mockItems = [
     id: 1,
     completed: false,
   },
+
 ];
 
 module.exports = mockItems;
